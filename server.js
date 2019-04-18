@@ -1,7 +1,6 @@
 var express = require('express');
-var bodyParser = require('body-parser');
-var apiRoutes = require('./app/routing/apiRoutes')
-var htmlRoutes = require('./app/routing/htmlRoutes')
+// var bodyParser = require('body-parser');
+
 
 // ---- Setting PORT ------ //
 var PORT = process.env.PORT || 5050;
@@ -13,12 +12,13 @@ var app = express();
 app.use(express.static('public'));
 
 //---- Ussing body-parser ----//
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 
 // --- Declaring Routes -----//
-app.use(apiRoutes);
-app.use(htmlRoutes);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 // --- Start Server (express)----//
 app.listen(PORT, function() {
