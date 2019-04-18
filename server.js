@@ -1,10 +1,10 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var apiRoutes = require('./app/routing/apiRoutes.js')
+var apiRoutes = require('./app/routing/apiRoutes')
 var htmlRoutes = require('./app/routing/htmlRoutes')
 
 // ---- Setting PORT ------ //
-var PORT = process.env.PORT || 3001;
+var PORT = process.env.PORT || 5050;
 
 // ---- Ussing Express ---- //
 var app = express();

@@ -4,13 +4,13 @@ var friends = [{
     "scores":[
         5,
         1,
-        4,
-        4,
+        2,
+        2,
         5,
         1,
         2,
         5,
-        4,
+        2,
         1
       ]
   },
@@ -18,32 +18,32 @@ var friends = [{
     "name":"Tony Stark",
     "photo":"https://via.placeholder.com/200x100",
     "scores":[
-        5,
+        2,
         1,
         4,
         4,
-        5,
+        2,
         1,
         2,
-        5,
+        2,
         4,
         1
       ]
   },
   {
     "name":"Thor",
-    "photo":"https://via.placeholder.com/200x100",
+    "photo":"https://via.placeholder.com/200x400",
     "scores":[
         5,
-        1,
+        4,
         4,
         4,
         5,
-        1,
+        4,
         2,
         5,
         4,
-        1
+        4
       ]
   }
 

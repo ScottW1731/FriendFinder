@@ -1,15 +1,27 @@
-var path = require('path');
+var friends = require("../data/friends.js")
 
 module.exports = function(app){
 
-    app.get("/", function(req, res){
-        //homepage
-        res.sendFile(path.join(__dirname,"../public/home.html"))
+    app.get("/api/allfriends", function(req, res){
+        res.json(friends);
+
+
     });
-    app.get("/survey", function(req, res){
-        res.sendFile(path.join(__dirname,"../public/survey.html"))
-    });
-    app.get("*", function(req, res){
-        res.sendFile(path.join(__dirname,"../public/home.html"))
-    });
+    // app.post("/api/allfriends", function(req, res){
+    //     // var newFriend = req.body;
+    //     var name = req.body.name;
+    //     var image = req.body.image;
+    //     var scores = req.body.scores;
+        
+    //     var newFriend = {
+    //         name: name, 
+    //         image: image, 
+    //         scores: scores
+    //     }
+    //     var bestMatch = friends[Math.floor(Math.random()*table.length)];
+    //     friends.push(newFriend);
+    //     res.json(bestMatch);
+
+    // });
+
 }
