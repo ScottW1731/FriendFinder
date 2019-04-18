@@ -1,0 +1,50 @@
+var friends = [{
+    "name":"Steve Rogers",
+    "photo":"hhttps://via.placeholder.com/200x100",
+    "scores":[
+        5,
+        1,
+        4,
+        4,
+        5,
+        1,
+        2,
+        5,
+        4,
+        1
+      ]
+  },
+  {
+    "name":"Tony Stark",
+    "photo":"https://via.placeholder.com/200x100",
+    "scores":[
+        5,
+        1,
+        4,
+        4,
+        5,
+        1,
+        2,
+        5,
+        4,
+        1
+      ]
+  },
+  {
+    "name":"Thor",
+    "photo":"https://via.placeholder.com/200x100",
+    "scores":[
+        5,
+        1,
+        4,
+        4,
+        5,
+        1,
+        2,
+        5,
+        4,
+        1
+      ]
+  }
+
+]
