@@ -1,4 +1,5 @@
 var express = require('express');
+// var path=require('path');
 // var bodyParser = require('body-parser');
 
 
@@ -8,9 +9,9 @@ var PORT = process.env.PORT || 5050;
 // ---- Ussing Express ---- //
 var app = express();
 
-//---- Using static folder -----//
-app.use(express.static('public'));
-
+// //---- Using static folder -----//
+app.use(express.static('app/public'));
+// app.use(express.static(path.join(__dirname,'/app/public')));
 //---- Ussing body-parser ----//
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

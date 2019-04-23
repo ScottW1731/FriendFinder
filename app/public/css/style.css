@@ -1,9 +1,10 @@
 body {
-    background-color: #058800;
+    background-color: #058800 !important;
+
 }
 
 .navbar{
-    background-color: #fd4646;
+    background-color: #fd4646 !important;
     text-align: center;
     padding: 14px 16px;
     color: black;
